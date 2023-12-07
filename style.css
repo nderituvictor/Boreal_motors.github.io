@@ -543,7 +543,7 @@ footer .copywrite{
     justify-content: center;
   }
   #feature .fe-box{
-    margin: 15px 10px;
+    margin: 15px 15px;
   }
   #product1 .pro-container{
     justify-content: center;
@@ -552,7 +552,7 @@ footer .copywrite{
     margin: 15px;
   }
   #banner{
-    height: 25vh;
+    height: 20vh;
   }
   #sm-banner .banner-box{
     min-width: 100%;
@@ -583,6 +583,87 @@ footer .copywrite{
   h2{
     font-size: 32px;
   } 
+}
+@media (max-width: 477px){
+  .section-p1{
+    padding: 20px;
+  }
+  #header{
+    padding: 10px, 30px;
+  }
+  #hero{
+    padding: 0 20px;
+    background-position: 55%;
+  }
+  #hero h4,
+  #hero h2,
+  #hero h1{
+    padding: 0;
+    margin: 0;
+  }
+  #hero h1 span img{
+    width: 100px;
+  }
+  #hero p{
+    padding: 0;
+    margin: 0;
+  }
+  #page-header.blog-header{
+    background-size: contain ;
+    background-position: center;
+    height: 150px;
+    padding: 30px;
+  }
+  h1{
+    font-size: 36px;
+  }
+  h2{
+    font-size: 32px;
+  } 
+  #feature{
+    justify-content: space-between;
+  }
+  #feature .fe-box{
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+  #product1 .pro{
+    width: 100%;
+  }
+  #banner{
+    height: 40vh;
+  }
+  #sm-banner .banner-box{
+    height: 40vh;
+  }
+  #banner3{
+    padding: 0 20px;
+  }
+  #banner3 .banner-box{
+    width: 100%;
+  }
+  #newsletter{
+    padding: 40px 20px;
+  }
+  #newsletter .form{
+    width: 100%;
+  } 
+  #blog{
+    padding: 100px 0 0 0;
+  }
+  #blog .blog-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  #blog .blog-box .blog-img{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #blog .blog-box .blog-details{
+    width: 100%;
+  }
 }
 
 #page-header{
@@ -663,12 +744,11 @@ footer .copywrite{
   line-height: 25px;
 }
 #page-header.blog-header{
-  background: url(images/barner/b.jpg);
   background-size: contain ;
   background-position: center;
 }
 #blog{
-  padding: 150px 150px 0 150px;
+  padding: 150px 60px 0 60px;
 }
 #blog .blog-box{
   display: flex;
@@ -681,7 +761,7 @@ footer .copywrite{
   width: 50%;
   margin-right: 40px;
 }
-#blog img{
+#blog .blog-img img{
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -700,10 +780,10 @@ footer .copywrite{
 #blog .blog-details a::after{
   content: "";
   position: absolute;
-  bottom: 50%;
   right: -55px;
   width: 50px;
   height: 1px;
+  top: 4px;
   background: black;
   transition: 0.3s ease;
 }
